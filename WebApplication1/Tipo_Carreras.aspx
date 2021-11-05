@@ -11,6 +11,7 @@
     <link type="text/css" rel="stylesheet" href="Css/Estilos.css" />
 </head>
 <body class="flex-body">
+ <form id="form2" runat="server" class="centrarVertical">
     <header class="header">
         <div class="header-container">
             <div class="header-item">
@@ -21,20 +22,15 @@
             <div class="header-item">
                 <h2>Sistema de Administración Web</h2>
             </div>
+            <div class="nav"> 
+                            <asp:Button ID="Button1" CssClass="boton" runat="server" OnClick="btnVolver_Click" Text="Volver" />
+                            <asp:Label ID="lblNombreUsuario" margin-left="10px" margin-right="5px" Font-Bold="true" runat="server"></asp:Label>
+                            <asp:Button ID="Button2" CssClass="boton" runat="server" OnClick="btnCerrarSesion_Click"  Text="Cerrar Sesión" />     
+                    </div>
         </div>
     </header>
     <main class="flex-main">
-        <form id="form1" runat="server">
             <div class="flex-form">
-                <div class="nav">
-                    <div>
-                        <asp:Button ID="btnVolver" CssClass="boton" runat="server" OnClick="btnVolver_Click" Text="Volver" />
-                        <asp:Button ID="btnCerrarSesion" CssClass="boton" runat="server" OnClick="btnCerrarSesion_Click" Text="Cerrar Sesión" />
-                    </div>
-                    <div>
-                        Usuario:
-                    <asp:Label ID="lblNombreUsuario" Font-Bold="true" runat="server"></asp:Label>
-                    </div>
                 </div>
                 <div>
                     <h1 class="titulo">Materias</h1>

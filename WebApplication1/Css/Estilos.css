@@ -43,6 +43,11 @@
     align-content:center;
     align-items:center;
 }
+.espaciado {
+    margin: 20px 5px;
+    padding: 0;
+    border-width: 0;
+}
 .boton {
     background-color: #1c819f;
     color: white;
@@ -52,7 +57,7 @@
     border: none;
     transition: 0.5s;
     /*Agregados(Para que así se vea bien, originalmente la clase contiene lo de arriba nada más)*/
-    margin: 0px 5px;
+    margin: 5px 5px;
 }
 .botonGrid {
     background-color: #A64B32;
